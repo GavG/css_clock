@@ -1,0 +1,234 @@
+<html>
+
+    <head>
+        <style>
+            :root {
+                --clocket-size: 50px;
+
+                --d: 90deg;
+                --u: 270deg;
+                --r: 0deg;
+                --l: 180deg;
+                --n: 135deg;
+
+                --secs:20s;
+            }
+
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+
+            .digit {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2px;
+                width: max-content;
+            }
+
+            .digit div {
+                width: var(--clocket-size);
+                height: var(--clocket-size);
+                background-color: #000;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .digit div:after, .digit div:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: var(--clocket-size);
+                height: calc(var(--clocket-size) / 10);
+                transform-origin: 0% 50%;
+                top: 50%;
+                left: 50%;
+                background-color: #FF0;
+                animation-iteration-count: infinite;
+            }
+
+            .digit div:after {
+                background-color: #0F0;
+            }
+
+            #counter:after {
+                position: absolute;
+                content: "0";
+                color: red;
+                animation: ct var(--secs) linear infinite;
+            }
+
+            @keyframes ct {
+                0% {content: "0";}
+                5% {content: "0.5";}
+                10% {content: "1";}
+                15% {content: "1.5";}
+                20% {content: "2";}
+                25% {content: "2.5";}
+                30% {content: "3";}
+                35% {content: "3.5";}
+                40% {content: "4";}
+                45% {content: "4.5";}
+                50% {content: "5";}
+                55% {content: "5.5";}
+                60% {content: "6";}
+                65% {content: "6.5";}
+                70% {content: "7";}
+                75% {content: "7.5";}
+                80% {content: "8";}
+                85% {content: "8.5";}
+                90% {content: "9";}
+            }
+
+            #s2 .a0:before { transform: rotate(var(--d)); }
+            #s2 .a0:after { transform: rotate(var(--r)); }
+
+            #s2 .a1:before { transform: rotate(var(--l)); }
+            #s2 .a1:after {
+                animation: zero_to_nine_a1_after var(--secs) linear infinite;
+            }
+
+            @keyframes zero_to_nine_a1_after {
+                0%   { transform: rotate(var(--r));  }
+                35%  { transform: rotate(var(--r));  }
+                40%  { transform: rotate(var(--d)); }
+                45%  { transform: rotate(var(--d)); }
+                50%  { transform: rotate(var(--r));  }
+                100% { transform: rotate(var(--r));  }
+            }
+
+            #s2 .a2:before { animation: zero_to_nine_a2_before var(--secs) linear infinite; }
+            #s2 .a2:after  { animation: zero_to_nine_a2_after var(--secs) linear infinite; }
+
+            @keyframes zero_to_nine_a2_before {
+                0%   { transform: rotate(var(--l)); }
+                35%  { transform: rotate(var(--l)); }
+                40%  { transform: rotate(var(--d));  }
+                45%  { transform: rotate(var(--d));  }
+                50%  { transform: rotate(var(--l)); }
+                100% { transform: rotate(var(--l)); }
+            }
+
+            @keyframes zero_to_nine_a2_after {
+                0%   { transform: rotate(var(--r));  }
+                5%   { transform: rotate(var(--r));  }
+                10%  { transform: rotate(var(--d)); }
+                15%  { transform: rotate(var(--d)); }
+                20%  { transform: rotate(var(--r));  }
+                100% { transform: rotate(var(--r));  }
+            }
+
+            #s2 .a3:before { animation: zero_to_nine_a3_before var(--secs) linear infinite; }
+            #s2 .a3:after  { animation: zero_to_nine_a3_after var(--secs) linear infinite; }
+
+            @keyframes zero_to_nine_a3_before {
+                0%   { transform: rotate(var(--l)); }
+                5%   { transform: rotate(var(--l)); }
+                10%   { transform: rotate(var(--n)); }
+                15%  { transform: rotate(var(--n)); }
+                20%  { transform: rotate(var(--l)); }
+                100% { transform: rotate(var(--l)); }
+            }
+
+            @keyframes zero_to_nine_a3_after {
+                0%   { transform: rotate(var(--d));  }
+                5%   { transform: rotate(var(--d));  }
+                10%  { transform: rotate(var(--n)); }
+                15%  { transform: rotate(var(--n)); }
+                20%  { transform: rotate(var(--d));  }
+                100% { transform: rotate(var(--d));  }
+            }
+
+            #s2 .b0:before { transform: rotate(var(--u)); }
+            #s2 .b0:after { animation: zero_to_nine_b0_after var(--secs) linear infinite; }
+
+            @keyframes zero_to_nine_b0_after {
+                0%   { transform: rotate(var(--d)); }
+                5%   { transform: rotate(var(--d)); }
+                10%  { transform: rotate(var(--r)); }
+                35%  { transform: rotate(var(--r)); }
+                40%  { transform: rotate(var(--d)); }
+                65%  { transform: rotate(var(--d)); }
+                70%  { transform: rotate(var(--r)); }
+                75%  { transform: rotate(var(--r)); }
+                80%  { transform: rotate(var(--d)); }
+                100% { transform: rotate(var(--d)); }
+            }
+
+            #s2 .b1:before { animation: zero_to_nine_b1_before var(--secs) linear infinite; }
+            #s2 .b1:after  { animation: zero_to_nine_b1_after var(--secs) linear infinite; }
+
+            @keyframes zero_to_nine_b1_before {
+                0%   { transform: rotate(var(--d)); }
+                5%   { transform: rotate(var(--d)); }
+                10%  { transform: rotate(var(--l)); }
+                20%  { transform: rotate(var(--l)); }
+                35%  { transform: rotate(var(--l)); }
+                40%  { transform: rotate(var(--d)); }
+                65%  { transform: rotate(var(--d)); }
+                70%  { transform: rotate(var(--l)); }
+                75%  { transform: rotate(var(--l)); }
+                80%  { transform: rotate(var(--d)); }
+                100% { transform: rotate(var(--d)); }
+            }
+
+            @keyframes zero_to_nine_b1_after {
+                0%   { transform: rotate(var(--r)); }
+                5%   { transform: rotate(var(--r)); }
+                10%  { transform: rotate(var(--d)); }
+                15%  { transform: rotate(var(--d)); }
+                20%  { transform: rotate(var(--r)); }
+                35%  { transform: rotate(var(--r)); }
+                40%  { transform: rotate(var(--u)); }
+                45%  { transform: rotate(var(--u)); }
+                50%  { transform: rotate(var(--r)); }
+                100% { transform: rotate(var(--r)); }
+            }
+
+            #s2 .b2:before { animation: zero_to_nine_b2_before var(--secs) linear infinite; }
+            #s2 .b2:after  { animation: zero_to_nine_b2_after var(--secs) linear infinite; }
+
+            @keyframes zero_to_nine_b2_before {
+                0%   { transform: rotate(var(--d)); }
+                45%  { transform: rotate(var(--d)); }
+                50%  { transform: rotate(var(--r)); }
+                65%  { transform: rotate(var(--r)); }
+                70%  { transform: rotate(var(--d)); }
+                100% { transform: rotate(var(--d)); }
+            }
+
+            @keyframes zero_to_nine_b2_after {
+                0%   { transform: rotate(var(--l)); }
+                5%   { transform: rotate(var(--l)); }
+                10%  { transform: rotate(var(--u)); }
+                15%  { transform: rotate(var(--u)); }
+                20%  { transform: rotate(var(--l)); }
+                35%  { transform: rotate(var(--l)); }
+                40%  { transform: rotate(var(--u)); }
+                45%  { transform: rotate(var(--u)); }
+                50%  { transform: rotate(var(--l)); }
+                100% { transform: rotate(var(--l)); }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="counter">c</div>
+
+        <div id="clock">
+
+            <div id="s2" class="digit">
+                <div class="a0"></div><div class="a1"></div><div class="a2"></div><div class="a3"></div>
+                <div class="b0"></div><div class="b1"></div><div class="b2"></div><div class="b3"></div>
+                <div class="c0"></div><div class="c1"></div><div class="c2"></div><div class="c3"></div>
+                <div class="d0"></div><div class="d1"></div><div class="d2"></div><div class="d3"></div>
+                <div class="e0"></div><div class="e1"></div><div class="e2"></div><div class="e3"></div>
+                <div class="f0"></div><div class="f1"></div><div class="f2"></div><div class="f3"></div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
