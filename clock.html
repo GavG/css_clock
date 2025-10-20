@@ -210,6 +210,31 @@
                 100% { transform: rotate(var(--l)); }
             }
 
+            #s2 .b3:before { animation: zero_to_nine_b3_before var(--secs) linear infinite; }
+            #s2 .b3:after  { animation: zero_to_nine_b3_after var(--secs) linear infinite; }
+
+            @keyframes zero_to_nine_b3_before {
+                0%   { transform: rotate(var(--u)); }
+                5%   { transform: rotate(var(--u)); }
+                10%  { transform: rotate(var(--n)); }
+                15%  { transform: rotate(var(--n)); }
+                20%  { transform: rotate(var(--u)); }
+                100% { transform: rotate(var(--u)); }
+            }
+
+            @keyframes zero_to_nine_b3_after {
+                0%   { transform: rotate(var(--d)); }
+                5%   { transform: rotate(var(--d)); }
+                10%  { transform: rotate(var(--n)); }
+                15%  { transform: rotate(var(--n)); }
+                20%  { transform: rotate(var(--d)); }
+                45%  { transform: rotate(var(--d)); }
+                50%  { transform: rotate(var(--l)); }
+                65%  { transform: rotate(var(--l)); }
+                70%  { transform: rotate(var(--d)); }
+                100% { transform: rotate(var(--d)); }
+            }
+
         </style>
     </head>
 
