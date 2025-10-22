@@ -47,8 +47,8 @@
                 animation-iteration-count: infinite;
             }
 
-            .digit div:after {
-                background-color: #0F0;
+            .digit div:before {
+                background-color: #00F;
             }
 
             #counter:after {
@@ -319,6 +319,96 @@
                 100% { transform: rotate(var(--d)); }
             }
 
+            @keyframes _0_to_9_d0_b {
+                0%   { transform: rotate(var(--u)); }
+                5%   { transform: rotate(var(--u)); }
+                10%  { transform: rotate(var(--n)); }
+                15%  { transform: rotate(var(--n)); }
+                20%  { transform: rotate(var(--u)); }
+                25%  { transform: rotate(var(--u)); }
+                30%  { transform: rotate(var(--n)); }
+                35%  { transform: rotate(var(--n)); }
+                40%  { transform: rotate(var(--u)); }
+                65%  { transform: rotate(var(--u)); }
+                70%  { transform: rotate(var(--n)); }
+                75%  { transform: rotate(var(--n)); }
+                80%  { transform: rotate(var(--u)); }
+                100% { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_9_d0_a {
+                0%   { transform: rotate(var(--d)); }
+                5%   { transform: rotate(var(--d)); }
+                10%  { transform: rotate(var(--n)); }
+                15%  { transform: rotate(var(--n)); }
+                20%  { transform: rotate(var(--d)); }
+                25%  { transform: rotate(var(--d)); }
+                30%  { transform: rotate(var(--n)); }
+                35%  { transform: rotate(var(--n)); }
+                40%  { transform: rotate(var(--r)); }
+                55%  { transform: rotate(var(--r)); }
+                60%  { transform: rotate(var(--d)); }
+                65%  { transform: rotate(var(--d)); }
+                70%  { transform: rotate(var(--n)); }
+                75%  { transform: rotate(var(--n)); }
+                80%  { transform: rotate(var(--d)); }
+                85%  { transform: rotate(var(--d)); }
+                90%  { transform: rotate(var(--r)); }
+                95%  { transform: rotate(var(--r)); }
+                100% { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_9_d1_b {
+                0%   { transform: rotate(var(--u)); }
+                15%  { transform: rotate(var(--u)); }
+                20%  { transform: rotate(var(--r)); }
+                65%  { transform: rotate(var(--r)); }
+                70%  { transform: rotate(var(--n)); }
+                75%  { transform: rotate(var(--n)); }
+                80%  { transform: rotate(var(--r)); }
+                95%  { transform: rotate(var(--r)); }
+                100% { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_9_d1_a {
+                0%   { transform: rotate(var(--d)); }
+                25%  { transform: rotate(var(--d)); }
+                30%  { transform: rotate(var(--u)); }
+                35%  { transform: rotate(var(--u)); }
+                40%  { transform: rotate(var(--l)); }
+                55%  { transform: rotate(var(--l)); }
+                60%  { transform: rotate(var(--d)); }
+                65%  { transform: rotate(var(--d)); }
+                70%  { transform: rotate(var(--n)); }
+                75%  { transform: rotate(var(--n)); }
+                80%  { transform: rotate(var(--d)); }
+                85%  { transform: rotate(var(--d)); }
+                90%  { transform: rotate(var(--l)); }
+                95%  { transform: rotate(var(--l)); }
+                100% { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_9_d2_b {
+                0%   { transform: rotate(var(--u)); }
+                15%  { transform: rotate(var(--u)); }
+                20%  { transform: rotate(var(--r)); }
+                25%  { transform: rotate(var(--r)); }
+                30%  { transform: rotate(var(--d)); }
+                100% { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_9_d2_a {
+                0%   { transform: rotate(var(--d)); }
+                15%  { transform: rotate(var(--d)); }
+                20%  { transform: rotate(var(--l)); }
+                65%  { transform: rotate(var(--l)); }
+                70%  { transform: rotate(var(--u)); }
+                75%  { transform: rotate(var(--u)); }
+                80%  { transform: rotate(var(--l)); }
+                95%  { transform: rotate(var(--l)); }
+                100% { transform: rotate(var(--u)); }
+            }
+
             #s2 .a0:before { transform: rotate(var(--d)); }
             #s2 .a0:after  { transform: rotate(var(--r)); }
             #s2 .a1:before { transform: rotate(var(--l)); }
@@ -345,6 +435,15 @@
             #s2 .c2:after  { animation: _0_to_9_c2_a var(--secs) linear infinite; }
             #s2 .c3:before { animation: _0_to_9_c3_b var(--secs) linear infinite; }
             #s2 .c3:after  { animation: _0_to_9_c3_a var(--secs) linear infinite; }
+
+            #s2 .d0:before { animation: _0_to_9_d0_b var(--secs) linear infinite; }
+            #s2 .d0:after  { animation: _0_to_9_d0_a var(--secs) linear infinite; }
+            #s2 .d1:before { animation: _0_to_9_d1_b var(--secs) linear infinite; }
+            #s2 .d1:after  { animation: _0_to_9_d1_a var(--secs) linear infinite; }
+            #s2 .d2:before { animation: _0_to_9_d2_b var(--secs) linear infinite; }
+            #s2 .d2:after  { animation: _0_to_9_d2_a var(--secs) linear infinite; }
+            #s2 .d3:before { animation: _0_to_9_d3_b var(--secs) linear infinite; }
+            #s2 .d3:after  { animation: _0_to_9_d3_a var(--secs) linear infinite; }
 
         </style>
     </head>
