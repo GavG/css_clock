@@ -373,6 +373,28 @@
                 30%, 100% { transform: rotate(var(--u)); }
             }
 
+            @keyframes _0_to_9_e3_b {
+                0%,  5%   { transform: rotate(var(--u)); }
+                10%, 25%  { transform: rotate(var(--l)); }
+                30%, 100% { transform: rotate(var(--u)); }
+            }
+
+            /* f */
+
+            @keyframes _0_to_9_f0_b {
+                0%,  35%  { transform: rotate(var(--u)); }
+                40%, 45%  { transform: rotate(var(--n)); }
+                50%, 100% { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_9_f0_a {
+                0%,  35%  { transform: rotate(var(--r)); }
+                40%, 45%  { transform: rotate(var(--n)); }
+                50%, 65%  { transform: rotate(var(--r)); }
+                70%, 75%  { transform: rotate(var(--n)); }
+                80%, 100% { transform: rotate(var(--r)); }
+            }
+
             #s2 .a0:before { transform: rotate(var(--d)); }
             #s2 .a0:after  { transform: rotate(var(--r)); }
             #s2 .a1:before { transform: rotate(var(--l)); }
@@ -416,7 +438,11 @@
             #s2 .e2:before { animation: _0_to_9_e2_b var(--secs) linear infinite; }
             #s2 .e2:after  { animation: _0_to_9_e2_a var(--secs) linear infinite; }
             #s2 .e3:before { animation: _0_to_9_e3_b var(--secs) linear infinite; }
-            #s2 .e3:after  { animation: _0_to_9_e3_a var(--secs) linear infinite; }
+            #s2 .e3:after  { transform: rotate(var(--d)); }
+
+            #s2 .f0:before { animation: _0_to_9_f0_b var(--secs) linear infinite; }
+            #s2 .f0:after  { animation: _0_to_9_f0_a var(--secs) linear infinite; }
+
 
         </style>
     </head>
