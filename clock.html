@@ -19,19 +19,31 @@
                 height: 100%;
             }
 
+            body {
+                background-color: #000;
+            }
+
+            #clock {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
             .digit {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                gap: 2px;
+                gap: 4px;
                 width: max-content;
             }
 
             .digit div {
                 width: var(--clocket-size);
                 height: var(--clocket-size);
-                background-color: #000;
                 position: relative;
                 overflow: hidden;
+                border: 1px solid #333;
             }
 
             .digit div:after, .digit div:before {
@@ -45,35 +57,6 @@
                 left: 50%;
                 background-color: #FF0;
                 animation-iteration-count: infinite;
-            }
-
-            #counter:after {
-                position: absolute;
-                content: "0";
-                color: red;
-                animation: ct var(--secs) linear infinite;
-            }
-
-            @keyframes ct {
-                0% {content: "0";}
-                5% {content: "0.5";}
-                10% {content: "1";}
-                15% {content: "1.5";}
-                20% {content: "2";}
-                25% {content: "2.5";}
-                30% {content: "3";}
-                35% {content: "3.5";}
-                40% {content: "4";}
-                45% {content: "4.5";}
-                50% {content: "5";}
-                55% {content: "5.5";}
-                60% {content: "6";}
-                65% {content: "6.5";}
-                70% {content: "7";}
-                75% {content: "7.5";}
-                80% {content: "8";}
-                85% {content: "8.5";}
-                90% {content: "9";}
             }
 
             /* '0' to '9' */
@@ -475,9 +458,16 @@
 
     <body>
 
-        <div id="counter">c</div>
-
         <div id="clock">
+
+            <div id="s1" class="digit">
+                <div class="a0"></div><div class="a1"></div><div class="a2"></div><div class="a3"></div>
+                <div class="b0"></div><div class="b1"></div><div class="b2"></div><div class="b3"></div>
+                <div class="c0"></div><div class="c1"></div><div class="c2"></div><div class="c3"></div>
+                <div class="d0"></div><div class="d1"></div><div class="d2"></div><div class="d3"></div>
+                <div class="e0"></div><div class="e1"></div><div class="e2"></div><div class="e3"></div>
+                <div class="f0"></div><div class="f1"></div><div class="f2"></div><div class="f3"></div>
+            </div>
 
             <div id="s2" class="digit">
                 <div class="a0"></div><div class="a1"></div><div class="a2"></div><div class="a3"></div>
