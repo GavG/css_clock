@@ -11,7 +11,7 @@
                 --l: 180deg;
                 --n: 135deg;
 
-                --secs:20s;
+                --secs:10s;
             }
 
             html, body {
@@ -32,7 +32,6 @@
                 background-color: #000;
                 position: relative;
                 overflow: hidden;
-                color: white;
             }
 
             .digit div:after, .digit div:before {
@@ -46,10 +45,6 @@
                 left: 50%;
                 background-color: #FF0;
                 animation-iteration-count: infinite;
-            }
-
-            .digit div:before {
-                background-color: #00F;
             }
 
             #counter:after {
@@ -384,7 +379,9 @@
             @keyframes _0_to_9_f0_b {
                 0%,  35%  { transform: rotate(var(--u)); }
                 40%, 45%  { transform: rotate(var(--n)); }
-                50%, 100% { transform: rotate(var(--u)); }
+                50%, 65%  { transform: rotate(var(--u)); }
+                70%, 75%  { transform: rotate(var(--n)); }
+                80%, 100% { transform: rotate(var(--u)); }
             }
 
             @keyframes _0_to_9_f0_a {
@@ -393,6 +390,30 @@
                 50%, 65%  { transform: rotate(var(--r)); }
                 70%, 75%  { transform: rotate(var(--n)); }
                 80%, 100% { transform: rotate(var(--r)); }
+            }
+
+            @keyframes _0_to_9_f1_b {
+                0%,  35%  { transform: rotate(var(--l)); }
+                40%, 45%  { transform: rotate(var(--n)); }
+                50%, 65%  { transform: rotate(var(--l)); }
+                70%, 75%  { transform: rotate(var(--n)); }
+                80%, 100% { transform: rotate(var(--l)); }
+            }
+
+            @keyframes _0_to_9_f1_a {
+                0%,  35%  { transform: rotate(var(--r)); }
+                40%, 45%  { transform: rotate(var(--n)); }
+                50%, 65%  { transform: rotate(var(--r)); }
+                70%, 75%  { transform: rotate(var(--n)); }
+                80%, 100% { transform: rotate(var(--r)); }
+            }
+
+            @keyframes _0_to_9_f2_b {
+                0%,  35%  { transform: rotate(var(--l)); }
+                40%, 45%  { transform: rotate(var(--u)); }
+                50%, 65%  { transform: rotate(var(--l)); }
+                70%, 75%  { transform: rotate(var(--u)); }
+                80%, 100% { transform: rotate(var(--l)); }
             }
 
             #s2 .a0:before { transform: rotate(var(--d)); }
@@ -442,7 +463,12 @@
 
             #s2 .f0:before { animation: _0_to_9_f0_b var(--secs) linear infinite; }
             #s2 .f0:after  { animation: _0_to_9_f0_a var(--secs) linear infinite; }
-
+            #s2 .f1:before { animation: _0_to_9_f1_b var(--secs) linear infinite; }
+            #s2 .f1:after  { animation: _0_to_9_f1_a var(--secs) linear infinite; }
+            #s2 .f2:before { animation: _0_to_9_f2_b var(--secs) linear infinite; }
+            #s2 .f2:after  { transform: rotate(var(--r)); }
+            #s2 .f3:before { transform: rotate(var(--u)); }
+            #s2 .f3:after  { transform: rotate(var(--l)); }
 
         </style>
     </head>
@@ -454,12 +480,12 @@
         <div id="clock">
 
             <div id="s2" class="digit">
-                <div class="a0">a0</div><div class="a1">a1</div><div class="a2">a2</div><div class="a3">a3</div>
-                <div class="b0">b0</div><div class="b1">b1</div><div class="b2">b2</div><div class="b3">b3</div>
-                <div class="c0">c0</div><div class="c1">c1</div><div class="c2">c2</div><div class="c3">c3</div>
-                <div class="d0">d0</div><div class="d1">d1</div><div class="d2">d2</div><div class="d3">d3</div>
-                <div class="e0">e0</div><div class="e1">e1</div><div class="e2">e2</div><div class="e3">e3</div>
-                <div class="f0">f0</div><div class="f1">f1</div><div class="f2">f2</div><div class="f3">f3</div>
+                <div class="a0"></div><div class="a1"></div><div class="a2"></div><div class="a3"></div>
+                <div class="b0"></div><div class="b1"></div><div class="b2"></div><div class="b3"></div>
+                <div class="c0"></div><div class="c1"></div><div class="c2"></div><div class="c3"></div>
+                <div class="d0"></div><div class="d1"></div><div class="d2"></div><div class="d3"></div>
+                <div class="e0"></div><div class="e1"></div><div class="e2"></div><div class="e3"></div>
+                <div class="f0"></div><div class="f1"></div><div class="f2"></div><div class="f3"></div>
             </div>
 
         </div>
