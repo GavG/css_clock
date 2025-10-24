@@ -11,7 +11,8 @@
                 --l: 180deg;
                 --n: 135deg;
 
-                --secs:10s;
+                --sec-ones:10s;
+                --sec-tens:60s;
             }
 
             html, body {
@@ -59,9 +60,7 @@
                 animation-iteration-count: infinite;
             }
 
-            /* '0' to '9' */
-
-            /* a */
+            /* 0-9 a */
 
             @keyframes _0_to_9_a1_a {
                 0%,  35%  { transform: rotate(var(--r));  }
@@ -93,7 +92,7 @@
                 20%, 100% { transform: rotate(var(--d));  }
             }
 
-            /* b */
+            /* 0-6 b */
 
             @keyframes _0_to_9_b0_a {
                 0%,  5%   { transform: rotate(var(--d)); }
@@ -147,7 +146,7 @@
                 70%, 100% { transform: rotate(var(--d)); }
             }
 
-            /* c */
+            /* 0-9 c */
 
             @keyframes _0_to_9_c0_b {
                 0%,  5%   { transform: rotate(var(--u)); }
@@ -218,7 +217,7 @@
                 20%, 100% { transform: rotate(var(--d)); }
             }
 
-            /* d */
+            /* 0-9 d */
 
             @keyframes _0_to_9_d0_b {
                 0%,  5%   { transform: rotate(var(--u)); }
@@ -289,7 +288,7 @@
                 30%, 100% { transform: rotate(var(--d)); }
             }
 
-            /* e */
+            /* 0-9 e */
 
             @keyframes _0_to_9_e0_b {
                 0%,  5%   { transform: rotate(var(--u)); }
@@ -357,7 +356,7 @@
                 30%, 100% { transform: rotate(var(--u)); }
             }
 
-            /* f */
+            /* 0-9 f */
 
             @keyframes _0_to_9_f0_b {
                 0%,  35%  { transform: rotate(var(--u)); }
@@ -399,56 +398,398 @@
                 80%, 100% { transform: rotate(var(--l)); }
             }
 
+            /* 0-6 a */
+
+            @keyframes _0_to_6_a1_a {
+                0%,  65.27%  { transform: rotate(var(--r));  }
+                66.66%, 81.94%  { transform: rotate(var(--d)); }
+                83.33%, 100% { transform: rotate(var(--r));  }
+            }
+
+            @keyframes _0_to_6_a2_b {
+                0%,  65.27%  { transform: rotate(var(--l)); }
+                66.66%, 81.94%  { transform: rotate(var(--d));  }
+                83.33%, 100% { transform: rotate(var(--l)); }
+            }
+
+            @keyframes _0_to_6_a2_a {
+                0%,  15.27%   { transform: rotate(var(--r));  }
+                16.66%, 31.94%  { transform: rotate(var(--d)); }
+                33.33%, 100% { transform: rotate(var(--r));  }
+            }
+
+            @keyframes _0_to_6_a3_b {
+                0%,  15.27%   { transform: rotate(var(--l)); }
+                16.66%, 31.94%  { transform: rotate(var(--n)); }
+                33.33%, 100% { transform: rotate(var(--l)); }
+            }
+
+            @keyframes _0_to_6_a3_a {
+                0%,  15.27%   { transform: rotate(var(--d));  }
+                16.66%, 31.94%  { transform: rotate(var(--n)); }
+                33.33%, 100% { transform: rotate(var(--d));  }
+            }
+
+            /* 0-6 b */
+
+            @keyframes _0_to_6_b0_a {
+                0%,  15.27%   { transform: rotate(var(--d)); }
+                16.66%, 65.27%  { transform: rotate(var(--r)); }
+                66.66%, 100%  { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_6_b1_b {
+                0%,  15.27%   { transform: rotate(var(--d)); }
+                16.66%, 65.27%  { transform: rotate(var(--l)); }
+                66.66%, 100%  { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_6_b1_a {
+                0%,  15.27%   { transform: rotate(var(--r)); }
+                16.66%, 31.94%  { transform: rotate(var(--d)); }
+                33.33%, 65.27%  { transform: rotate(var(--r)); }
+                66.66%, 81.94%  { transform: rotate(var(--u)); }
+                83.33%, 100% { transform: rotate(var(--r)); }
+            }
+
+            @keyframes _0_to_6_b2_b {
+                0%, 81.94%   { transform: rotate(var(--d)); }
+                83.33%, 98.61%  { transform: rotate(var(--r)); }
+                100%      { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_6_b2_a {
+                0%,  15.27%   { transform: rotate(var(--l)); }
+                16.66%, 31.94%  { transform: rotate(var(--u)); }
+                33.33%, 65.27%  { transform: rotate(var(--l)); }
+                66.66%, 81.94%  { transform: rotate(var(--u)); }
+                83.33%, 100% { transform: rotate(var(--l)); }
+            }
+
+            @keyframes _0_to_6_b3_b {
+                0%,  15.27%   { transform: rotate(var(--u)); }
+                16.66%, 31.94%  { transform: rotate(var(--n)); }
+                33.33%, 100% { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_b3_a {
+                0%,  15.27%   { transform: rotate(var(--d)); }
+                16.66%, 31.94%  { transform: rotate(var(--n)); }
+                33.33%, 81.94%  { transform: rotate(var(--d)); }
+                83.33%, 98.61%  { transform: rotate(var(--l)); }
+                100%      { transform: rotate(var(--d)); }
+            }
+
+            /* 0-6 c */
+
+            @keyframes _0_to_6_c0_b {
+                0%,  15.27%   { transform: rotate(var(--u)); }
+                16.66%, 31.94%  { transform: rotate(var(--n)); }
+                33.33%, 48.61%  { transform: rotate(var(--r)); }
+                50%, 65.27%  { transform: rotate(var(--n)); }
+                66.66%, 100% { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_c0_a {
+                0%,  15.27%   { transform: rotate(var(--d)); }
+                16.66%, 31.94%  { transform: rotate(var(--n)); }
+                33.33%, 48.61%  { transform: rotate(var(--d)); }
+                50%, 65.27%  { transform: rotate(var(--n)); }
+                66.66%, 100% { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_6_c1_b {
+                0%,  31.94% { transform: rotate(var(--u)); }
+                33.33%, 48.61% { transform: rotate(var(--r)); }
+                100%     { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_c1_a {
+                0%, 31.94%   { transform: rotate(var(--d)); }
+                33.33%, 48.61%  { transform: rotate(var(--l)); }
+                50%, 65.27%  { transform: rotate(var(--d)); }
+                66.66%, 98.61%  { transform: rotate(var(--u)); }
+                100%      { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_6_c2_b {
+                0%, 81.94%   { transform: rotate(var(--u)); }
+                83.33%, 98.61%  { transform: rotate(var(--l)); }
+                100%      { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_c2_a {
+                0%, 31.94%   { transform: rotate(var(--d)); }
+                33.33%, 81.94%  { transform: rotate(var(--l)); }
+                83.33%, 98.61%  { transform: rotate(var(--r)); }
+                100%      { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_6_c3_b {
+                0%,  15.27%   { transform: rotate(var(--u)); }
+                16.66%, 31.94%  { transform: rotate(var(--n)); }
+                33.33%, 81.94%  { transform: rotate(var(--u)); }
+                83.33%, 98.61%  { transform: rotate(var(--l)); }
+                100%      { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_c3_a {
+                0%,  15.27%   { transform: rotate(var(--d)); }
+                16.66%, 31.94%  { transform: rotate(var(--n)); }
+                33.33%, 100% { transform: rotate(var(--d)); }
+            }
+
+            /* 0-6 d */
+
+            @keyframes _0_to_6_d0_b {
+                0%,  15.27%   { transform: rotate(var(--u)); }
+                16.66%, 31.94%  { transform: rotate(var(--n)); }
+                33.33%, 48.61%  { transform: rotate(var(--u)); }
+                50%, 65.27%  { transform: rotate(var(--n)); }
+                66.66%, 100%  { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_d0_a {
+                0%,  15.27%   { transform: rotate(var(--d)); }
+                16.66%, 31.94%  { transform: rotate(var(--n)); }
+                33.33%, 48.61%  { transform: rotate(var(--d)); }
+                50%, 65.27%  { transform: rotate(var(--n)); }
+                66.66%, 98.61%  { transform: rotate(var(--r)); }
+                100%      { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_6_d1_b {
+                0%, 31.94%  { transform: rotate(var(--u)); }
+                33.33%, 98.61% { transform: rotate(var(--r)); }
+                100%     { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_d1_a {
+                0%, 48.61%   { transform: rotate(var(--d)); }
+                50%, 65.27%  { transform: rotate(var(--u)); }
+                66.66%, 98.61%  { transform: rotate(var(--l)); }
+                100%      { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_6_d2_b {
+                0%,  31.94%  { transform: rotate(var(--u)); }
+                33.33%, 48.61%  { transform: rotate(var(--r)); }
+                50%, 100% { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_6_d2_a {
+                0%,  31.94%  { transform: rotate(var(--d)); }
+                33.33%, 98.61%  { transform: rotate(var(--l)); }
+                100%      { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_d3_b {
+                0%,  15.27%   { transform: rotate(var(--u)); }
+                16.66%, 31.94%  { transform: rotate(var(--n)); }
+                33.33%, 100% { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_d3_a {
+                0%,  15.27%   { transform: rotate(var(--d)); }
+                16.66%, 31.94%  { transform: rotate(var(--n)); }
+                33.33%, 48.61%  { transform: rotate(var(--l)); }
+                50%, 100% { transform: rotate(var(--d)); }
+            }
+
+            /* 0-6 e */
+
+            @keyframes _0_to_6_e0_b {
+                0%,  15.27%   { transform: rotate(var(--u)); }
+                16.66%, 31.94%  { transform: rotate(var(--r)); }
+                33.33%, 48.61%  { transform: rotate(var(--u)); }
+                50%, 65.27%  { transform: rotate(var(--r)); }
+                66.66%, 81.94%  { transform: rotate(var(--n)); }
+                83.33%, 98.61%  { transform: rotate(var(--r)); }
+                100%      { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_e0_a {
+                0%,  65.27%  { transform: rotate(var(--d)); }
+                66.66%, 81.94%  { transform: rotate(var(--n)); }
+                83.33%, 100%  { transform: rotate(var(--d)); }
+            }
+
+            @keyframes _0_to_6_e1_b {
+                0%, 48.61%   { transform: rotate(var(--u)); }
+                50%, 65.27%  { transform: rotate(var(--l)); }
+                66.66%, 81.94%  { transform: rotate(var(--n)); }
+                83.33%, 98.61%  { transform: rotate(var(--l)); }
+                100%      { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_e1_a {
+                0%,  15.27%   { transform: rotate(var(--r)); }
+                16.66%, 31.94%  { transform: rotate(var(--l)); }
+                33.33%, 65.27%  { transform: rotate(var(--r)); }
+                66.66%, 81.94%  { transform: rotate(var(--n)); }
+                83.33%, 100% { transform: rotate(var(--r)); }
+            }
+
+            @keyframes _0_to_6_e2_b {
+                0%,  15.27%   { transform: rotate(var(--l)); }
+                16.66%, 31.94%  { transform: rotate(var(--u)); }
+                33.33%, 65.27%  { transform: rotate(var(--l)); }
+                66.66%, 81.94%  { transform: rotate(var(--d)); }
+                83.33%, 100% { transform: rotate(var(--l)); }
+            }
+
+            @keyframes _0_to_6_e2_a {
+                0%, 15.27%    { transform: rotate(var(--u)); }
+                16.66%, 48.61%  { transform: rotate(var(--r)); }
+                50%, 100% { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_e3_b {
+                0%,  15.27%   { transform: rotate(var(--u)); }
+                16.66%, 48.61%  { transform: rotate(var(--l)); }
+                50%, 100% { transform: rotate(var(--u)); }
+            }
+
+            /* 0-6 f */
+
+            @keyframes _0_to_6_f0_b {
+                0%,  65.27%  { transform: rotate(var(--u)); }
+                66.66%, 81.94%  { transform: rotate(var(--n)); }
+                83.33%, 100% { transform: rotate(var(--u)); }
+            }
+
+            @keyframes _0_to_6_f0_a {
+                0%,  65.27%  { transform: rotate(var(--r)); }
+                66.66%, 81.94%  { transform: rotate(var(--n)); }
+                83.33%, 100% { transform: rotate(var(--r)); }
+            }
+
+            @keyframes _0_to_6_f1_b {
+                0%,  65.27%  { transform: rotate(var(--l)); }
+                66.66%, 81.94%  { transform: rotate(var(--n)); }
+                83.33%, 100% { transform: rotate(var(--l)); }
+            }
+
+            @keyframes _0_to_6_f1_a {
+                0%,  65.27%  { transform: rotate(var(--r)); }
+                66.66%, 81.94%  { transform: rotate(var(--n)); }
+                83.33%, 100% { transform: rotate(var(--r)); }
+            }
+
+            @keyframes _0_to_6_f2_b {
+                0%,  65.27%  { transform: rotate(var(--l)); }
+                66.66%, 81.94%  { transform: rotate(var(--u)); }
+                83.33%, 100% { transform: rotate(var(--l)); }
+            }
+
+            /* S1 Tens */
+
+            #s1 .a0:before { transform: rotate(var(--d)); }
+            #s1 .a0:after  { transform: rotate(var(--r)); }
+            #s1 .a1:before { transform: rotate(var(--l)); }
+            #s1 .a1:after  { animation: _0_to_6_a1_a var(--sec-tens) linear infinite; }
+            #s1 .a2:before { animation: _0_to_6_a2_b var(--sec-tens) linear infinite; }
+            #s1 .a2:after  { animation: _0_to_6_a2_a var(--sec-tens) linear infinite; }
+            #s1 .a3:before { animation: _0_to_6_a3_b var(--sec-tens) linear infinite; }
+            #s1 .a3:after  { animation: _0_to_6_a3_a var(--sec-tens) linear infinite; }
+
+            #s1 .b0:before { transform: rotate(var(--u)); }
+            #s1 .b0:after  { animation: _0_to_6_b0_a var(--sec-tens) linear infinite; }
+            #s1 .b1:before { animation: _0_to_6_b1_b var(--sec-tens) linear infinite; }
+            #s1 .b1:after  { animation: _0_to_6_b1_a var(--sec-tens) linear infinite; }
+            #s1 .b2:before { animation: _0_to_6_b2_b var(--sec-tens) linear infinite; }
+            #s1 .b2:after  { animation: _0_to_6_b2_a var(--sec-tens) linear infinite; }
+            #s1 .b3:before { animation: _0_to_6_b3_b var(--sec-tens) linear infinite; }
+            #s1 .b3:after  { animation: _0_to_6_b3_a var(--sec-tens) linear infinite; }
+
+            #s1 .c0:before { animation: _0_to_6_c0_b var(--sec-tens) linear infinite; }
+            #s1 .c0:after  { animation: _0_to_6_c0_a var(--sec-tens) linear infinite; }
+            #s1 .c1:before { animation: _0_to_6_c1_b var(--sec-tens) linear infinite; }
+            #s1 .c1:after  { animation: _0_to_6_c1_a var(--sec-tens) linear infinite; }
+            #s1 .c2:before { animation: _0_to_6_c2_b var(--sec-tens) linear infinite; }
+            #s1 .c2:after  { animation: _0_to_6_c2_a var(--sec-tens) linear infinite; }
+            #s1 .c3:before { animation: _0_to_6_c3_b var(--sec-tens) linear infinite; }
+            #s1 .c3:after  { animation: _0_to_6_c3_a var(--sec-tens) linear infinite; }
+
+            #s1 .d0:before { animation: _0_to_6_d0_b var(--sec-tens) linear infinite; }
+            #s1 .d0:after  { animation: _0_to_6_d0_a var(--sec-tens) linear infinite; }
+            #s1 .d1:before { animation: _0_to_6_d1_b var(--sec-tens) linear infinite; }
+            #s1 .d1:after  { animation: _0_to_6_d1_a var(--sec-tens) linear infinite; }
+            #s1 .d2:before { animation: _0_to_6_d2_b var(--sec-tens) linear infinite; }
+            #s1 .d2:after  { animation: _0_to_6_d2_a var(--sec-tens) linear infinite; }
+            #s1 .d3:before { animation: _0_to_6_d3_b var(--sec-tens) linear infinite; }
+            #s1 .d3:after  { animation: _0_to_6_d3_a var(--sec-tens) linear infinite; }
+
+            #s1 .e0:before { animation: _0_to_6_e0_b var(--sec-tens) linear infinite; }
+            #s1 .e0:after  { animation: _0_to_6_e0_a var(--sec-tens) linear infinite; }
+            #s1 .e1:before { animation: _0_to_6_e1_b var(--sec-tens) linear infinite; }
+            #s1 .e1:after  { animation: _0_to_6_e1_a var(--sec-tens) linear infinite; }
+            #s1 .e2:before { animation: _0_to_6_e2_b var(--sec-tens) linear infinite; }
+            #s1 .e2:after  { animation: _0_to_6_e2_a var(--sec-tens) linear infinite; }
+            #s1 .e3:before { animation: _0_to_6_e3_b var(--sec-tens) linear infinite; }
+            #s1 .e3:after  { transform: rotate(var(--d)); }
+
+            #s1 .f0:before { animation: _0_to_6_f0_b var(--sec-tens) linear infinite; }
+            #s1 .f0:after  { animation: _0_to_6_f0_a var(--sec-tens) linear infinite; }
+            #s1 .f1:before { animation: _0_to_6_f1_b var(--sec-tens) linear infinite; }
+            #s1 .f1:after  { animation: _0_to_6_f1_a var(--sec-tens) linear infinite; }
+            #s1 .f2:before { animation: _0_to_6_f2_b var(--sec-tens) linear infinite; }
+            #s1 .f2:after  { transform: rotate(var(--r)); }
+            #s1 .f3:before { transform: rotate(var(--u)); }
+            #s1 .f3:after  { transform: rotate(var(--l)); }
+
+            /* S2 Ones */
+
             #s2 .a0:before { transform: rotate(var(--d)); }
             #s2 .a0:after  { transform: rotate(var(--r)); }
             #s2 .a1:before { transform: rotate(var(--l)); }
-            #s2 .a1:after  { animation: _0_to_9_a1_a var(--secs) linear infinite; }
-            #s2 .a2:before { animation: _0_to_9_a2_b var(--secs) linear infinite; }
-            #s2 .a2:after  { animation: _0_to_9_a2_a var(--secs) linear infinite; }
-            #s2 .a3:before { animation: _0_to_9_a3_b var(--secs) linear infinite; }
-            #s2 .a3:after  { animation: _0_to_9_a3_a var(--secs) linear infinite; }
+            #s2 .a1:after  { animation: _0_to_9_a1_a var(--sec-ones) linear infinite; }
+            #s2 .a2:before { animation: _0_to_9_a2_b var(--sec-ones) linear infinite; }
+            #s2 .a2:after  { animation: _0_to_9_a2_a var(--sec-ones) linear infinite; }
+            #s2 .a3:before { animation: _0_to_9_a3_b var(--sec-ones) linear infinite; }
+            #s2 .a3:after  { animation: _0_to_9_a3_a var(--sec-ones) linear infinite; }
 
             #s2 .b0:before { transform: rotate(var(--u)); }
-            #s2 .b0:after  { animation: _0_to_9_b0_a var(--secs) linear infinite; }
-            #s2 .b1:before { animation: _0_to_9_b1_b var(--secs) linear infinite; }
-            #s2 .b1:after  { animation: _0_to_9_b1_a var(--secs) linear infinite; }
-            #s2 .b2:before { animation: _0_to_9_b2_b var(--secs) linear infinite; }
-            #s2 .b2:after  { animation: _0_to_9_b2_a var(--secs) linear infinite; }
-            #s2 .b3:before { animation: _0_to_9_b3_b var(--secs) linear infinite; }
-            #s2 .b3:after  { animation: _0_to_9_b3_a var(--secs) linear infinite; }
+            #s2 .b0:after  { animation: _0_to_9_b0_a var(--sec-ones) linear infinite; }
+            #s2 .b1:before { animation: _0_to_9_b1_b var(--sec-ones) linear infinite; }
+            #s2 .b1:after  { animation: _0_to_9_b1_a var(--sec-ones) linear infinite; }
+            #s2 .b2:before { animation: _0_to_9_b2_b var(--sec-ones) linear infinite; }
+            #s2 .b2:after  { animation: _0_to_9_b2_a var(--sec-ones) linear infinite; }
+            #s2 .b3:before { animation: _0_to_9_b3_b var(--sec-ones) linear infinite; }
+            #s2 .b3:after  { animation: _0_to_9_b3_a var(--sec-ones) linear infinite; }
 
-            #s2 .c0:before { animation: _0_to_9_c0_b var(--secs) linear infinite; }
-            #s2 .c0:after  { animation: _0_to_9_c0_a var(--secs) linear infinite; }
-            #s2 .c1:before { animation: _0_to_9_c1_b var(--secs) linear infinite; }
-            #s2 .c1:after  { animation: _0_to_9_c1_a var(--secs) linear infinite; }
-            #s2 .c2:before { animation: _0_to_9_c2_b var(--secs) linear infinite; }
-            #s2 .c2:after  { animation: _0_to_9_c2_a var(--secs) linear infinite; }
-            #s2 .c3:before { animation: _0_to_9_c3_b var(--secs) linear infinite; }
-            #s2 .c3:after  { animation: _0_to_9_c3_a var(--secs) linear infinite; }
+            #s2 .c0:before { animation: _0_to_9_c0_b var(--sec-ones) linear infinite; }
+            #s2 .c0:after  { animation: _0_to_9_c0_a var(--sec-ones) linear infinite; }
+            #s2 .c1:before { animation: _0_to_9_c1_b var(--sec-ones) linear infinite; }
+            #s2 .c1:after  { animation: _0_to_9_c1_a var(--sec-ones) linear infinite; }
+            #s2 .c2:before { animation: _0_to_9_c2_b var(--sec-ones) linear infinite; }
+            #s2 .c2:after  { animation: _0_to_9_c2_a var(--sec-ones) linear infinite; }
+            #s2 .c3:before { animation: _0_to_9_c3_b var(--sec-ones) linear infinite; }
+            #s2 .c3:after  { animation: _0_to_9_c3_a var(--sec-ones) linear infinite; }
 
-            #s2 .d0:before { animation: _0_to_9_d0_b var(--secs) linear infinite; }
-            #s2 .d0:after  { animation: _0_to_9_d0_a var(--secs) linear infinite; }
-            #s2 .d1:before { animation: _0_to_9_d1_b var(--secs) linear infinite; }
-            #s2 .d1:after  { animation: _0_to_9_d1_a var(--secs) linear infinite; }
-            #s2 .d2:before { animation: _0_to_9_d2_b var(--secs) linear infinite; }
-            #s2 .d2:after  { animation: _0_to_9_d2_a var(--secs) linear infinite; }
-            #s2 .d3:before { animation: _0_to_9_d3_b var(--secs) linear infinite; }
-            #s2 .d3:after  { animation: _0_to_9_d3_a var(--secs) linear infinite; }
+            #s2 .d0:before { animation: _0_to_9_d0_b var(--sec-ones) linear infinite; }
+            #s2 .d0:after  { animation: _0_to_9_d0_a var(--sec-ones) linear infinite; }
+            #s2 .d1:before { animation: _0_to_9_d1_b var(--sec-ones) linear infinite; }
+            #s2 .d1:after  { animation: _0_to_9_d1_a var(--sec-ones) linear infinite; }
+            #s2 .d2:before { animation: _0_to_9_d2_b var(--sec-ones) linear infinite; }
+            #s2 .d2:after  { animation: _0_to_9_d2_a var(--sec-ones) linear infinite; }
+            #s2 .d3:before { animation: _0_to_9_d3_b var(--sec-ones) linear infinite; }
+            #s2 .d3:after  { animation: _0_to_9_d3_a var(--sec-ones) linear infinite; }
 
-            #s2 .e0:before { animation: _0_to_9_e0_b var(--secs) linear infinite; }
-            #s2 .e0:after  { animation: _0_to_9_e0_a var(--secs) linear infinite; }
-            #s2 .e1:before { animation: _0_to_9_e1_b var(--secs) linear infinite; }
-            #s2 .e1:after  { animation: _0_to_9_e1_a var(--secs) linear infinite; }
-            #s2 .e2:before { animation: _0_to_9_e2_b var(--secs) linear infinite; }
-            #s2 .e2:after  { animation: _0_to_9_e2_a var(--secs) linear infinite; }
-            #s2 .e3:before { animation: _0_to_9_e3_b var(--secs) linear infinite; }
+            #s2 .e0:before { animation: _0_to_9_e0_b var(--sec-ones) linear infinite; }
+            #s2 .e0:after  { animation: _0_to_9_e0_a var(--sec-ones) linear infinite; }
+            #s2 .e1:before { animation: _0_to_9_e1_b var(--sec-ones) linear infinite; }
+            #s2 .e1:after  { animation: _0_to_9_e1_a var(--sec-ones) linear infinite; }
+            #s2 .e2:before { animation: _0_to_9_e2_b var(--sec-ones) linear infinite; }
+            #s2 .e2:after  { animation: _0_to_9_e2_a var(--sec-ones) linear infinite; }
+            #s2 .e3:before { animation: _0_to_9_e3_b var(--sec-ones) linear infinite; }
             #s2 .e3:after  { transform: rotate(var(--d)); }
 
-            #s2 .f0:before { animation: _0_to_9_f0_b var(--secs) linear infinite; }
-            #s2 .f0:after  { animation: _0_to_9_f0_a var(--secs) linear infinite; }
-            #s2 .f1:before { animation: _0_to_9_f1_b var(--secs) linear infinite; }
-            #s2 .f1:after  { animation: _0_to_9_f1_a var(--secs) linear infinite; }
-            #s2 .f2:before { animation: _0_to_9_f2_b var(--secs) linear infinite; }
+            #s2 .f0:before { animation: _0_to_9_f0_b var(--sec-ones) linear infinite; }
+            #s2 .f0:after  { animation: _0_to_9_f0_a var(--sec-ones) linear infinite; }
+            #s2 .f1:before { animation: _0_to_9_f1_b var(--sec-ones) linear infinite; }
+            #s2 .f1:after  { animation: _0_to_9_f1_a var(--sec-ones) linear infinite; }
+            #s2 .f2:before { animation: _0_to_9_f2_b var(--sec-ones) linear infinite; }
             #s2 .f2:after  { transform: rotate(var(--r)); }
             #s2 .f3:before { transform: rotate(var(--u)); }
             #s2 .f3:after  { transform: rotate(var(--l)); }
