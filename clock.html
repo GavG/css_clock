@@ -13,6 +13,9 @@
 
                 --sec-ones:10s;
                 --sec-tens:60s;
+
+                --min-ones:600s;
+                --min-tens:3600s;
             }
 
             html, body {
@@ -63,9 +66,9 @@
             /* 0-9 a */
 
             @keyframes _0_to_9_a1_a {
-                0%,  35%  { transform: rotate(var(--r));  }
-                40%, 45%  { transform: rotate(var(--d)); }
-                50%, 100% { transform: rotate(var(--r));  }
+                0%  { transform: rotate(var(--r));  }
+                40% { transform: rotate(var(--d)); }
+                50% { transform: rotate(var(--r));  }
             }
 
             @keyframes _0_to_9_a2_b {
@@ -682,6 +685,140 @@
                 83.33%, 100% { transform: rotate(var(--l)); }
             }
 
+            /* Colons */
+
+            .colon div:before, .colon div:after {
+                transform: rotate(var(--n));
+            }
+
+            .colon .b1:before, .colon .c1:before, .colon .d1:before, .colon .e1:before {
+                transform: rotate(var(--r));
+            }
+
+            .colon .b2:before, .colon .c2:before, .colon .d2:before, .colon .e2:before {
+                transform: rotate(var(--l));
+            }
+
+            .colon .b1:after, .colon .b2:after, .colon .d1:after, .colon .d2:after {
+                transform: rotate(var(--d));
+            }
+
+            .colon .c1:after, .colon .c2:after, .colon .e1:after, .colon .e2:after {
+                transform: rotate(var(--u));
+            }
+
+            /* M1 Tens */
+
+            #m1 .a0:before { transform: rotate(var(--d)); }
+            #m1 .a0:after  { transform: rotate(var(--r)); }
+            #m1 .a1:before { transform: rotate(var(--l)); }
+            #m1 .a1:after  { animation: _0_to_6_a1_a var(--min-tens) linear infinite; }
+            #m1 .a2:before { animation: _0_to_6_a2_b var(--min-tens) linear infinite; }
+            #m1 .a2:after  { animation: _0_to_6_a2_a var(--min-tens) linear infinite; }
+            #m1 .a3:before { animation: _0_to_6_a3_b var(--min-tens) linear infinite; }
+            #m1 .a3:after  { animation: _0_to_6_a3_a var(--min-tens) linear infinite; }
+
+            #m1 .b0:before { transform: rotate(var(--u)); }
+            #m1 .b0:after  { animation: _0_to_6_b0_a var(--min-tens) linear infinite; }
+            #m1 .b1:before { animation: _0_to_6_b1_b var(--min-tens) linear infinite; }
+            #m1 .b1:after  { animation: _0_to_6_b1_a var(--min-tens) linear infinite; }
+            #m1 .b2:before { animation: _0_to_6_b2_b var(--min-tens) linear infinite; }
+            #m1 .b2:after  { animation: _0_to_6_b2_a var(--min-tens) linear infinite; }
+            #m1 .b3:before { animation: _0_to_6_b3_b var(--min-tens) linear infinite; }
+            #m1 .b3:after  { animation: _0_to_6_b3_a var(--min-tens) linear infinite; }
+
+            #m1 .c0:before { animation: _0_to_6_c0_b var(--min-tens) linear infinite; }
+            #m1 .c0:after  { animation: _0_to_6_c0_a var(--min-tens) linear infinite; }
+            #m1 .c1:before { animation: _0_to_6_c1_b var(--min-tens) linear infinite; }
+            #m1 .c1:after  { animation: _0_to_6_c1_a var(--min-tens) linear infinite; }
+            #m1 .c2:before { animation: _0_to_6_c2_b var(--min-tens) linear infinite; }
+            #m1 .c2:after  { animation: _0_to_6_c2_a var(--min-tens) linear infinite; }
+            #m1 .c3:before { animation: _0_to_6_c3_b var(--min-tens) linear infinite; }
+            #m1 .c3:after  { animation: _0_to_6_c3_a var(--min-tens) linear infinite; }
+
+            #m1 .d0:before { animation: _0_to_6_d0_b var(--min-tens) linear infinite; }
+            #m1 .d0:after  { animation: _0_to_6_d0_a var(--min-tens) linear infinite; }
+            #m1 .d1:before { animation: _0_to_6_d1_b var(--min-tens) linear infinite; }
+            #m1 .d1:after  { animation: _0_to_6_d1_a var(--min-tens) linear infinite; }
+            #m1 .d2:before { animation: _0_to_6_d2_b var(--min-tens) linear infinite; }
+            #m1 .d2:after  { animation: _0_to_6_d2_a var(--min-tens) linear infinite; }
+            #m1 .d3:before { animation: _0_to_6_d3_b var(--min-tens) linear infinite; }
+            #m1 .d3:after  { animation: _0_to_6_d3_a var(--min-tens) linear infinite; }
+
+            #m1 .e0:before { animation: _0_to_6_e0_b var(--min-tens) linear infinite; }
+            #m1 .e0:after  { animation: _0_to_6_e0_a var(--min-tens) linear infinite; }
+            #m1 .e1:before { animation: _0_to_6_e1_b var(--min-tens) linear infinite; }
+            #m1 .e1:after  { animation: _0_to_6_e1_a var(--min-tens) linear infinite; }
+            #m1 .e2:before { animation: _0_to_6_e2_b var(--min-tens) linear infinite; }
+            #m1 .e2:after  { animation: _0_to_6_e2_a var(--min-tens) linear infinite; }
+            #m1 .e3:before { animation: _0_to_6_e3_b var(--min-tens) linear infinite; }
+            #m1 .e3:after  { transform: rotate(var(--d)); }
+
+            #m1 .f0:before { animation: _0_to_6_f0_b var(--min-tens) linear infinite; }
+            #m1 .f0:after  { animation: _0_to_6_f0_a var(--min-tens) linear infinite; }
+            #m1 .f1:before { animation: _0_to_6_f1_b var(--min-tens) linear infinite; }
+            #m1 .f1:after  { animation: _0_to_6_f1_a var(--min-tens) linear infinite; }
+            #m1 .f2:before { animation: _0_to_6_f2_b var(--min-tens) linear infinite; }
+            #m1 .f2:after  { transform: rotate(var(--r)); }
+            #m1 .f3:before { transform: rotate(var(--u)); }
+            #m1 .f3:after  { transform: rotate(var(--l)); }
+
+            /* M2 Ones */
+
+            #m2 .a0:before { transform: rotate(var(--d)); }
+            #m2 .a0:after  { transform: rotate(var(--r)); }
+            #m2 .a1:before { transform: rotate(var(--l)); }
+            #m2 .a1:after  { animation: _0_to_9_a1_a var(--min-ones) linear infinite; }
+            #m2 .a2:before { animation: _0_to_9_a2_b var(--min-ones) linear infinite; }
+            #m2 .a2:after  { animation: _0_to_9_a2_a var(--min-ones) linear infinite; }
+            #m2 .a3:before { animation: _0_to_9_a3_b var(--min-ones) linear infinite; }
+            #m2 .a3:after  { animation: _0_to_9_a3_a var(--min-ones) linear infinite; }
+
+            #m2 .b0:before { transform: rotate(var(--u)); }
+            #m2 .b0:after  { animation: _0_to_9_b0_a var(--min-ones) linear infinite; }
+            #m2 .b1:before { animation: _0_to_9_b1_b var(--min-ones) linear infinite; }
+            #m2 .b1:after  { animation: _0_to_9_b1_a var(--min-ones) linear infinite; }
+            #m2 .b2:before { animation: _0_to_9_b2_b var(--min-ones) linear infinite; }
+            #m2 .b2:after  { animation: _0_to_9_b2_a var(--min-ones) linear infinite; }
+            #m2 .b3:before { animation: _0_to_9_b3_b var(--min-ones) linear infinite; }
+            #m2 .b3:after  { animation: _0_to_9_b3_a var(--min-ones) linear infinite; }
+
+            #m2 .c0:before { animation: _0_to_9_c0_b var(--min-ones) linear infinite; }
+            #m2 .c0:after  { animation: _0_to_9_c0_a var(--min-ones) linear infinite; }
+            #m2 .c1:before { animation: _0_to_9_c1_b var(--min-ones) linear infinite; }
+            #m2 .c1:after  { animation: _0_to_9_c1_a var(--min-ones) linear infinite; }
+            #m2 .c2:before { animation: _0_to_9_c2_b var(--min-ones) linear infinite; }
+            #m2 .c2:after  { animation: _0_to_9_c2_a var(--min-ones) linear infinite; }
+            #m2 .c3:before { animation: _0_to_9_c3_b var(--min-ones) linear infinite; }
+            #m2 .c3:after  { animation: _0_to_9_c3_a var(--min-ones) linear infinite; }
+
+            #m2 .d0:before { animation: _0_to_9_d0_b var(--min-ones) linear infinite; }
+            #m2 .d0:after  { animation: _0_to_9_d0_a var(--min-ones) linear infinite; }
+            #m2 .d1:before { animation: _0_to_9_d1_b var(--min-ones) linear infinite; }
+            #m2 .d1:after  { animation: _0_to_9_d1_a var(--min-ones) linear infinite; }
+            #m2 .d2:before { animation: _0_to_9_d2_b var(--min-ones) linear infinite; }
+            #m2 .d2:after  { animation: _0_to_9_d2_a var(--min-ones) linear infinite; }
+            #m2 .d3:before { animation: _0_to_9_d3_b var(--min-ones) linear infinite; }
+            #m2 .d3:after  { animation: _0_to_9_d3_a var(--min-ones) linear infinite; }
+
+            #m2 .e0:before { animation: _0_to_9_e0_b var(--min-ones) linear infinite; }
+            #m2 .e0:after  { animation: _0_to_9_e0_a var(--min-ones) linear infinite; }
+            #m2 .e1:before { animation: _0_to_9_e1_b var(--min-ones) linear infinite; }
+            #m2 .e1:after  { animation: _0_to_9_e1_a var(--min-ones) linear infinite; }
+            #m2 .e2:before { animation: _0_to_9_e2_b var(--min-ones) linear infinite; }
+            #m2 .e2:after  { animation: _0_to_9_e2_a var(--min-ones) linear infinite; }
+            #m2 .e3:before { animation: _0_to_9_e3_b var(--min-ones) linear infinite; }
+            #m2 .e3:after  { transform: rotate(var(--d)); }
+
+            #m2 .f0:before { animation: _0_to_9_f0_b var(--min-ones) linear infinite; }
+            #m2 .f0:after  { animation: _0_to_9_f0_a var(--min-ones) linear infinite; }
+            #m2 .f1:before { animation: _0_to_9_f1_b var(--min-ones) linear infinite; }
+            #m2 .f1:after  { animation: _0_to_9_f1_a var(--min-ones) linear infinite; }
+            #m2 .f2:before { animation: _0_to_9_f2_b var(--min-ones) linear infinite; }
+            #m2 .f2:after  { transform: rotate(var(--r)); }
+            #m2 .f3:before { transform: rotate(var(--u)); }
+            #m2 .f3:after  { transform: rotate(var(--l)); }
+
             /* S1 Tens */
 
             #s1 .a0:before { transform: rotate(var(--d)); }
@@ -743,7 +880,15 @@
             #s2 .a0:before { transform: rotate(var(--d)); }
             #s2 .a0:after  { transform: rotate(var(--r)); }
             #s2 .a1:before { transform: rotate(var(--l)); }
-            #s2 .a1:after  { animation: _0_to_9_a1_a var(--sec-ones) linear infinite; }
+
+
+            @keyframes rot {
+                0%  { transform: rotate(0deg);  }
+                100% { transform: rotate(360deg);  }
+            }
+
+
+            #s2 .a1:after  { animation: rot var(--sec-ones) linear(0, 0 35%, 0.25 40% 45%, 0 50% 100%) infinite; }
             #s2 .a2:before { animation: _0_to_9_a2_b var(--sec-ones) linear infinite; }
             #s2 .a2:after  { animation: _0_to_9_a2_a var(--sec-ones) linear infinite; }
             #s2 .a3:before { animation: _0_to_9_a3_b var(--sec-ones) linear infinite; }
@@ -800,6 +945,34 @@
     <body>
 
         <div id="clock">
+
+            <div id="m1" class="digit">
+                <div class="a0"></div><div class="a1"></div><div class="a2"></div><div class="a3"></div>
+                <div class="b0"></div><div class="b1"></div><div class="b2"></div><div class="b3"></div>
+                <div class="c0"></div><div class="c1"></div><div class="c2"></div><div class="c3"></div>
+                <div class="d0"></div><div class="d1"></div><div class="d2"></div><div class="d3"></div>
+                <div class="e0"></div><div class="e1"></div><div class="e2"></div><div class="e3"></div>
+                <div class="f0"></div><div class="f1"></div><div class="f2"></div><div class="f3"></div>
+            </div>
+
+            <div id="m2" class="digit">
+                <div class="a0"></div><div class="a1"></div><div class="a2"></div><div class="a3"></div>
+                <div class="b0"></div><div class="b1"></div><div class="b2"></div><div class="b3"></div>
+                <div class="c0"></div><div class="c1"></div><div class="c2"></div><div class="c3"></div>
+                <div class="d0"></div><div class="d1"></div><div class="d2"></div><div class="d3"></div>
+                <div class="e0"></div><div class="e1"></div><div class="e2"></div><div class="e3"></div>
+                <div class="f0"></div><div class="f1"></div><div class="f2"></div><div class="f3"></div>
+            </div>
+
+            <div class="digit colon">
+                <div class="a0"></div><div class="a1"></div><div class="a2"></div><div class="a3"></div>
+                <div class="b0"></div><div class="b1"></div><div class="b2"></div><div class="b3"></div>
+                <div class="c0"></div><div class="c1"></div><div class="c2"></div><div class="c3"></div>
+                <div class="d0"></div><div class="d1"></div><div class="d2"></div><div class="d3"></div>
+                <div class="e0"></div><div class="e1"></div><div class="e2"></div><div class="e3"></div>
+                <div class="f0"></div><div class="f1"></div><div class="f2"></div><div class="f3"></div>
+
+            </div>
 
             <div id="s1" class="digit">
                 <div class="a0"></div><div class="a1"></div><div class="a2"></div><div class="a3"></div>
